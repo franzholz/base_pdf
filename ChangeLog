@@ -1,0 +1,4 @@
+2019-09-19 Franz Holzinger <franz@ttproducts.de>
+    * initial creation based on Dompdf 0.8.3: See the file Vendor/version.txt and https://github.com/dompdf/dompdf/releases .
+    * support for PDFLib 9.
+

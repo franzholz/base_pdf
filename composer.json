@@ -1,0 +1,61 @@
+{
+  "name": "jambagecom/base-pdf",
+  "type": "typo3-cms-extension",
+  "description": "This provides the DOMPDF library.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "pdf",
+    "phpOffice"
+  ],
+  "support": {
+    "issues": "https://github.com/franzholz/base_pdf/issues"
+  },
+  "homepage": "https://jambage.com",
+  "authors": [
+    {
+        "name": "Fabien Ménager",
+        "email": "fabien.menager@gmail.com"
+    },
+    {
+        "name": "Brian Sweeney",
+        "email": "eclecticgeek@gmail.com"
+    },
+    {
+        "name": "Gabriel Bull",
+        "email": "me@gabrielbull.com"
+    },
+    {
+      "name": "Franz Holzinger",
+      "role": "Developer",
+      "homepage": "https://ttproducts.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "require": {
+    "typo3/cms-core": ">=6.2.0,<9.5.99",
+    "php": ">=5.4.0,<7.3.99",
+    "ext-gd": "*",
+    "ext-dom": "*",
+    "ext-mbstring": "*",
+    "phenx/php-font-lib": "0.5.*",
+    "phenx/php-svg-lib": "0.3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dompdf\\" : "Vendor/dompdf/src/"
+    },
+    "classmap" : ["Vendor/dompdf/lib/"]
+  },
+  "replace": {
+    "base_pdf": "self.version",
+    "typo3-ter/base-pdf": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "base_pdf"
+    }
+  }
+}
