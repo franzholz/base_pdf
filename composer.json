@@ -32,25 +32,24 @@
     }
   ],
   "license": [
-    "GPL-2.0+"
+    "GPL-2.0-or-later"
   ],
   "require": {
     "typo3/cms-core": ">=6.2.0,<9.5.99",
-    "php": ">=5.4.0,<7.3.99",
-    "ext-gd": "*",
+    "php": "^7.1,<7.3.99",
     "ext-dom": "*",
     "ext-mbstring": "*",
-    "phenx/php-font-lib": "0.5.*",
-    "phenx/php-svg-lib": "0.3.*"
+    "phenx/php-font-lib": "^0.5.2",
+    "phenx/php-svg-lib": "^0.3.3"
   },
-  "autoload": {
-    "psr-4": {
-      "Dompdf\\" : "Vendor/dompdf/src/"
-    },
-    "classmap" : ["Vendor/dompdf/lib/"]
-  },
+  "repositories": [
+    {
+        "type": "path",
+        "url": "Vendor/dompdf"
+    }
+  ],
   "replace": {
-    "base_pdf": "self.version",
+    "jambagecom/base-pdf": "self.version",
     "typo3-ter/base-pdf": "self.version"
   },
   "extra": {
