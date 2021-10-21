@@ -4,7 +4,7 @@
 # Extension Manager/Repository config file for ext "base_pdf".
 ########################################################################
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'DOMPDF Library',
     'description' => 'This provides the DOMPDF library.',
     'category' => 'misc',
@@ -16,14 +16,14 @@ $EM_CONF[$_EXTKEY] = array(
     'author' => 'Fabien Ménager, Brian Sweeney, Gabriel Bull, Franz Holzinger',
     'author_email' => 'franz@ttproducts.de',
     'author_company' => 'jambage.com',
-    'constraints' => array(
-        'depends' => array(
+    'constraints' => [
+        'depends' => [
             'php' => '7.1.0-7.3.99',
             'typo3' => '8.7.0-9.5.99'
-        ),
-        'conflicts' => array(
-        ),
-        'suggests' => array(
-        ),
-    ),
-);
+        ],
+        'conflicts' => [
+        ],
+        'suggests' => [
+        ],
+    ],
+];
