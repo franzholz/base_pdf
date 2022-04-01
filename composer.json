@@ -36,11 +36,11 @@
   ],
   "require": {
     "typo3/cms-core": "^9.5 || ^10.4 || ^11.5",
-    "php": "^7.2",
+    "php": "^7.1 || ^8.0",
     "ext-dom": "*",
     "ext-mbstring": "*",
-    "phenx/php-font-lib": "^0.5.2",
-    "phenx/php-svg-lib": "^0.3.3"
+    "phenx/php-font-lib": "^0.5.4",
+    "phenx/php-svg-lib": "^0.3.3 || ^0.4.0"
   },
   "repositories": [
     {
@@ -48,6 +48,14 @@
         "url": "Vendor/dompdf"
     }
   ],
+  "autoload": {
+      "psr-4": {
+          "Dompdf\\": "Vendor/dompdf/src/"
+      },
+      "classmap": [
+          "Vendor/dompdf/lib/"
+      ]
+  },
   "replace": {
     "typo3-ter/base-pdf": "self.version"
   },

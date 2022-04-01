@@ -6,9 +6,9 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'DOMPDF Library',
-    'description' => 'This provides the DOMPDF library.',
+    'description' => 'This provides the DOMPDF library. It also includes the libraries html5lib, php-css-parser, php-font-lib and php-svg-lib.',
     'category' => 'misc',
-    'version' => '0.2.0',
+    'version' => '0.2.1',
     'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
