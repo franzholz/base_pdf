@@ -1,3 +1,7 @@
+2023-05-06 Franz Holzinger <franz@ttproducts.de>
+    * Support for TYPO3 12
+    * Dompdf 2.0.3
+
 2022-03-31 Franz Holzinger <franz@ttproducts.de>
     * Dompdf 1.1.2
 

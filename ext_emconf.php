@@ -8,7 +8,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'DOMPDF Library',
     'description' => 'This provides the DOMPDF library. It also includes the libraries html5lib, php-css-parser, php-font-lib and php-svg-lib.',
     'category' => 'misc',
-    'version' => '0.2.1',
+    'version' => '2.0.3',
     'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'jambage.com',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-11.5.99'
+            'typo3' => '10.4.0-12.3.99'
         ],
         'conflicts' => [
         ],
