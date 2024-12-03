@@ -6,7 +6,8 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'DOMPDF Library',
-    'description' => 'This provides the DOMPDF library. It also includes the libraries html5lib, php-css-parser, php-font-lib and php-svg-lib.',
+    'description' => 'This provides the DOMPDF library. Consider to install the extensions base_font, base_htmlparser and base_svg .
+    ',
     'category' => 'misc',
     'version' => '3.0.0',
     'state' => 'stable',
@@ -23,6 +24,9 @@ $EM_CONF[$_EXTKEY] = [
         'conflicts' => [
         ],
         'suggests' => [
+            'base_font' => '',
+            'base_htmlparser' => '',
+            'base_svg' => '',
         ],
     ],
 ];

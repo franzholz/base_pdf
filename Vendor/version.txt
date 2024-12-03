@@ -1,3 +1,3 @@
-Dompdf 2.0.3
+Dompdf 3.0.0
 
 
