@@ -35,45 +35,25 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^10.4 || ^11.5 || ^12.3",
+    "typo3/cms-core": "^11.5 || ^12.4 || ^13.4",
     "ext-dom": "*",
     "ext-mbstring": "*",
     "masterminds/html5": "^2.0",
-    "phenx/php-font-lib": ">=0.5.4 <1.0.0",
-    "phenx/php-svg-lib": ">=0.3.3 <1.0.0"
+    "dompdf/php-font-lib": "^1.0.0",
+    "dompdf/php-svg-lib": "^1.0.0"
   },
   "repositories": [
-    {
-        "type": "path",
-        "url": "Vendor/dompdf/vendor/dompdf/dompdf/"
-    },
-    {
-        "type": "path",
-        "url": "Vendor/dompdf/vendor/masterminds/html5/"
-    },
-    {
-        "type": "path",
-        "url": "Vendor/dompdf/vendor/phenx/php-font-lib/"
-    },
-    {
-        "type": "path",
-        "url": "Vendor/dompdf/vendor/phenx/php-svg-lib/"
-    },
-    {
-        "type": "path",
-        "url": "Vendor/dompdf/vendor/sabberworm/php-css-parser/"
-    }
+      {
+          "type": "path",
+          "url": "Vendor/dompdf"
+      }
   ],
   "autoload": {
       "psr-4": {
-          "Dompdf\\": "Vendor/dompdf/vendor/dompdf/dompdf/src/",
-          "Masterminds\\": "Vendor/dompdf/vendor/dompdf/dompdf/src/",
-          "FontLib\\": "Vendor/dompdf/vendor/phenx/php-font-lib/src/FontLib",
-          "Svg\\": "Vendor/dompdf/vendor/phenx/php-svg-lib/src/Svg/",
-          "Sabberworm\\CSS\\": "Vendor/dompdf/vendor/sabberworm/php-css-parser/src/"
+          "Dompdf\\": "Vendor/dompdf/src/"
       },
       "classmap": [
-          "Vendor/dompdf/vendor/dompdf/dompdf/lib/"
+          "Vendor/dompdf/lib/"
       ]
   },
   "replace": {
