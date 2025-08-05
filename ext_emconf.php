@@ -9,7 +9,7 @@ $EM_CONF[$_EXTKEY] = [
     'description' => 'This provides the DOMPDF library. Consider to install the extensions base_font, base_htmlparser and base_svg .
     ',
     'category' => 'misc',
-    'version' => '3.0.0',
+    'version' => '3.1.0',
     'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
